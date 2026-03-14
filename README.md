@@ -9,3 +9,5 @@ It is easy to modify; the relevant sections to change are:
 % --- CUSTOM "SKETCHY" BOX FOR THEOREMS --- I didn't have different environments for definitions or anything, I just used the sketchybox environment.
 
 The math font is Euler, which I quite like. It would be easy to swap this out for another font.
+
+I collaborated with Gemini to build this Beamer template.
