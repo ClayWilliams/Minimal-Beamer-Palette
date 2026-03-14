@@ -1,0 +1,116 @@
+\documentclass[12pt, c]{beamer}
+\setbeamersize{text margin left=5mm, text margin right=5mm}
+
+% --- PACKAGES ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+
+
+
+%\usepackage{beton}
+\usepackage{newpxtext,newpxmath}
+\usepackage{euler}
+
+% This tells Beamer to use the fonts you actually loaded
+\usefonttheme{serif} 
+\usefonttheme{professionalfonts}
+
+% --- COLOR PALETTE ---
+%Best practice: Select from a palette on coolors.com
+%click on a color on their page and it copies the HEX (HTML) data for that color
+\definecolor{background1}{HTML}{1B263B}%body slide color
+\definecolor{background2}{HTML}{ACB7C3}%for the environments box
+\definecolor{titlepagecolor}{HTML}{0D1B2A}%title page background
+\definecolor{border1}{HTML}{415A77} %for the environments box
+\definecolor{maintitletext}{HTML}{B5CEE8} %Striking color for the title of the presentation
+\definecolor{slidetitletext}{HTML}{778DA9}%For the titles of slides
+\definecolor{text1}{HTML}{dee2e6}%main text color
+\definecolor{text2}{HTML}{050A10}%for content of environments box
+\definecolor{text3}{HTML}{E0E1DD}%For title of the environments box
+%for variation
+
+
+% --- BEAMER SETTINGS ---
+\setbeamercolor{background canvas}{bg=background1}
+\setbeamercolor{normal text}{fg=text1}
+\setbeamercolor{title}{fg=maintitletext}
+\setbeamercolor{frametitle}{fg=maintitletext}
+\setbeamerfont{frametitle}{series=\bfseries, size=\large}
+\setbeamertemplate{navigation symbols}{} % Clean look
+
+\setbeamercolor{item}{fg=maintitletext}
+
+% --- CUSTOM "SKETCHY" BOX FOR THEOREMS ---
+\newtcolorbox{sketchybox}[1]{
+  colback=background2,
+  colframe=border1,
+  colupper=text2,         % Body text color 
+  coltitle=text3,% Title color 
+  fonttitle=\bfseries,
+  title=#1,
+  enhanced,
+  boxrule=1.5pt
+}
+
+% --- TITLE SLIDE DATA ---
+\title{TITLE}
+
+\author{\texorpdfstring{NAME 1\textsuperscript{$\dagger$} \\ 
+\small Joint work with NAME 2\textsuperscript{$\dagger$} and NAME 3\textsuperscript{$\dagger$}}{}}
+
+\institute{
+\textsuperscript{$\dagger$}INSTITUTION \\
+\vspace{0.5cm}
+CONFERENCE}
+
+\date{CHANGE TO DATE
+    %\today
+    }
+\begin{document}
+
+
+{
+\setbeamercolor{background canvas}{bg=titlepagecolor} % Change 'blue!20' to your color
+\begin{frame}[plain] 
+    \titlepage
+\end{frame}
+}
+
+
+
+\begin{frame}{An Equation}
+There is only one environment type, sketchybox. Here it is.
+    \begin{sketchybox}{The Riemann Zeta Function}
+    \begin{align*}
+    \zeta(s) = \sum_{n\geq 1}\frac{1}{n^s} 
+    \end{align*}
+    for $ \Re(s)>1 $. 
+
+\end{sketchybox}
+
+\end{frame}
+
+
+
+\begin{frame}
+\center
+\textbf{\textcolor{maintitletext}{Thank you!}}
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
