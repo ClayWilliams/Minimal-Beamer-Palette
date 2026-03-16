@@ -2,7 +2,7 @@
 A minimal beamer presentation for which it is easy to modify the color palette to custom colors.
 It is easy to modify; the relevant sections to change are:
 
-% --- COLOR PALETTE ---I went to Coolors.com to pick a color palette I liked. You can use either the HEX code (TeX recognizes this as the {HTML} option) or the RGB value to change the colors. Coolors makes it easy to copy and paste HEX or RGB values from templates.
+% --- COLOR PALETTE ---I went to *https://coolors.co* to pick a color palette I liked. You can use either the HEX code (TeX recognizes this as the {HTML} option) or the RGB value to change the colors. Coolors makes it easy to copy and paste HEX or RGB values from templates.
 
 % --- BEAMER SETTINGS --- This is where I tweaked what colors applied to which text/areas.
 
